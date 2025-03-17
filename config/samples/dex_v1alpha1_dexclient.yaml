@@ -1,0 +1,9 @@
+apiVersion: dex.caprisys.eu/v1alpha1
+kind: DexClient
+metadata:
+  labels:
+    app.kubernetes.io/name: yado
+    app.kubernetes.io/managed-by: kustomize
+  name: dexclient-sample
+spec:
+  # TODO(user): Add fields here
