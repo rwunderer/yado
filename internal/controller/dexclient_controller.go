@@ -84,12 +84,12 @@ func (r *DexClientReconciler) Reconcile(ctx context.Context, req ctrl.Request) (
 	if err != nil {
 		if apierrors.IsNotFound(err) {
 			// If the custom resource is not found then it usually means that it was deleted or not created
-			// In this way, we will stop the reconciliation
-			log.Info("dexclient resource not found. Ignoring since object must be deleted")
+			// Either way, we will stop the reconciliation
+			log.Info("DexClient resource not found. Ignoring since object may be deleted")
 			return ctrl.Result{}, nil
 		}
 		// Error reading the object - requeue the request.
-		log.Error(err, "Failed to get dexclient")
+		log.Error(err, "Failed to get DexClient")
 		return ctrl.Result{}, err
 	}
 
