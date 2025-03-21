@@ -8,7 +8,7 @@ metadata:
   name: dexclient-editor-role
 rules:
 - apiGroups:
-  - dex.caprisys.eu
+  - dex.capercode.eu
   resources:
   - dexclients
   verbs:
@@ -20,7 +20,7 @@ rules:
   - update
   - watch
 - apiGroups:
-  - dex.caprisys.eu
+  - dex.capercode.eu
   resources:
   - dexclients/status
   verbs:

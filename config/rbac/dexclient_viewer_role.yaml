@@ -8,7 +8,7 @@ metadata:
   name: dexclient-viewer-role
 rules:
 - apiGroups:
-  - dex.caprisys.eu
+  - dex.capercode.eu
   resources:
   - dexclients
   verbs:
@@ -16,7 +16,7 @@ rules:
   - list
   - watch
 - apiGroups:
-  - dex.caprisys.eu
+  - dex.capercode.eu
   resources:
   - dexclients/status
   verbs:

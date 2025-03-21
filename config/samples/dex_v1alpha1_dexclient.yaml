@@ -1,4 +1,4 @@
-apiVersion: dex.caprisys.eu/v1alpha1
+apiVersion: dex.capercode.eu/v1alpha1
 kind: DexClient
 metadata:
   labels:

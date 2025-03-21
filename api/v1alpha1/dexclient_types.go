@@ -57,6 +57,9 @@ type DexClientStatus struct {
 	Phase DexClientPhase `json:"phase,omitempty"`
 	// ObservedGeneration is the most recent generation observed for this OAuth2 client by the controller.
 	ObservedGeneration int64 `json:"observedGeneration,omitempty"`
+	// Conditions store the status conditions of the OAuth2 client instances
+	// +operator-sdk:csv:customresourcedefinitions:type=status
+	Conditions []metav1.Condition `json:"conditions,omitempty" patchStrategy:"merge" patchMergeKey:"type" protobuf:"bytes,1,rep,name=conditions"`
 	// Reason is a human readable message indicating details about why the OAuth2 client is in this condition.
 	Reason string `json:"reason,omitempty"`
 }

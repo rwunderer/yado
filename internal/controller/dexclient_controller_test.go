@@ -51,7 +51,12 @@ var _ = Describe("DexClient Controller", func() {
 						Name:      resourceName,
 						Namespace: "default",
 					},
-					// TODO(user): Specify other spec details if needed.
+					Spec: dexv1alpha1.DexClientSpec{
+						SecretName: "dex-client-secret",
+						RedirectURIs: []string{
+							"https://client.example.com/callback",
+						},
+					},
 				}
 				Expect(k8sClient.Create(ctx, resource)).To(Succeed())
 			}

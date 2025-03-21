@@ -5,7 +5,7 @@ metadata:
   name: manager-role
 rules:
 - apiGroups:
-  - dex.caprisys.eu
+  - dex.capercode.eu
   resources:
   - dexclients
   verbs:
@@ -17,13 +17,13 @@ rules:
   - update
   - watch
 - apiGroups:
-  - dex.caprisys.eu
+  - dex.capercode.eu
   resources:
   - dexclients/finalizers
   verbs:
   - update
 - apiGroups:
-  - dex.caprisys.eu
+  - dex.capercode.eu
   resources:
   - dexclients/status
   verbs:
