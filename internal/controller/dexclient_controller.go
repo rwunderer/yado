@@ -61,6 +61,8 @@ type DexClientReconciler struct {
 // +kubebuilder:rbac:groups=dex.capercode.eu,resources=dexclients,verbs=get;list;watch;create;update;patch;delete
 // +kubebuilder:rbac:groups=dex.capercode.eu,resources=dexclients/status,verbs=get;update;patch
 // +kubebuilder:rbac:groups=dex.capercode.eu,resources=dexclients/finalizers,verbs=update
+// +kubebuilder:rbac:groups=core,resources=events,verbs=create;patch
+// +kubebuilder:rbac:groups=core,resources=secrets,verbs=get;list;watch;create;update;patch;delete
 
 // Reconcile is part of the main kubernetes reconciliation loop which aims to
 // move the current state of the cluster closer to the desired state.
