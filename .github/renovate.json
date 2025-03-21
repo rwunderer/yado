@@ -1,6 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>rwunderer/renovate"
-  ]
+    "github>rwunderer/renovate",
+    "github>rwunderer/renovate:container-tools",
+    "github>rwunderer/renovate:cosign-version",
+    "github>rwunderer/renovate:go-lang",
+    "customManagers:dockerfileVersions"
+  ],
+
+  "semanticCommits": "enabled",
+  "semanticCommitType": "chore"
 }
