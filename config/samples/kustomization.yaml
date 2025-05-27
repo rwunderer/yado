@@ -1,4 +1,0 @@
-## Append samples of your project ##
-resources:
-- dex_v1alpha1_dexclient.yaml
-# +kubebuilder:scaffold:manifestskustomizesamples
